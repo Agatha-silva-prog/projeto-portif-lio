@@ -37,20 +37,64 @@ li{
   margin: 3px;
   
 }
-a{
+header a{
   color: var(--texto-inverso);
   text-decoration: none;
   border-radius: 3px;
   padding: 10px;
-  padding-bottom: 3px;
-  padding-top: 3px;
+  
   
 }
-a:hover{
+header a:hover{
   background-color: var(--destaque-inverso);
   text-decoration: underline;
   transition: .5s;
 }
 header{
   background-color: var(--destaque);
+}
+div#social{
+  padding: 10px;
+  text-align: center;
+color: var(--destaque);
+font-size: 2em;
+padding-bottom: 20px;
+}
+div#social a{
+  color: var(--destaque);
+}
+div#social a:hover{
+  
+  color: var(--destaque-inverso);
+}
+h1{
+  color: var(--destaque);
+  padding: 10px;
+}
+p{
+  padding: 10px;
+  text-align: justify;
+}
+section#ficha{
+margin: 10px;
+padding-top: 20px;
+background-color: var(--fundo-card);
+border-radius: 10px;
+grid-column: 2;
+}
+img{
+ 
+ border-radius: 50%;
+  display: block;
+  width: 250px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  overflow: hidden;
+  margin: auto;
+  border: 5px solid var(--fundo-card);
+  outline: 5px solid var(--destaque);
+}
+main{
+  display: grid;
+  grid-template-columns: auto 90vw auto;
 }
