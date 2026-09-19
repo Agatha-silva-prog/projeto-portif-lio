@@ -53,6 +53,11 @@ header a:hover{
 header{
   background-color: var(--destaque);
 }
+main{
+  display: grid;
+  grid-template-columns: auto 90vw auto;
+  grid-template-rows: 1fr 1fr;
+}
 div#social{
   padding: 10px;
   text-align: center;
@@ -82,6 +87,12 @@ background-color: var(--fundo-card);
 border-radius: 10px;
 grid-column: 2;
 }
+section#detalhes{
+  margin: 10px;
+padding-top: 20px;
+border-radius: 10px;
+
+}
 img{
  
  border-radius: 50%;
@@ -94,7 +105,31 @@ img{
   border: 5px solid var(--fundo-card);
   outline: 5px solid var(--destaque);
 }
-main{
-  display: grid;
-  grid-template-columns: auto 90vw auto;
+section#detalhes{
+  
+  grid-area: 2 / 2;
+}
+article{
+  background-color: var(--fundo-card);
+border-radius: 10px;
+margin-bottom: 20px;
+}
+h2{
+  color: var(--destaque);
+  padding: 10px;
+  text-align: center;
+}
+
+article#video{
+  background-color: var(--fundo-card);
+  padding: 10px;
+}
+div.videos iframe{
+  width: 100%;
+  height: 100%;;
+  padding: 20px;
+  display: block;
+  margin: auto;
+  aspect-ratio: 16/9;
+  
 }
