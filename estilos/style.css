@@ -47,16 +47,19 @@ header a{
 }
 header a:hover{
   background-color: var(--destaque-inverso);
+  color: var(--destaque);
   text-decoration: underline;
   transition: .5s;
 }
 header{
   background-color: var(--destaque);
+  position: sticky;
+  top: 0px;
 }
 main{
   display: grid;
   grid-template-columns: auto 90vw auto;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr ;
 }
 div#social{
   padding: 10px;
@@ -269,4 +272,16 @@ footer a:hover{
   details{
     padding-top: 20px;
   }
+
+
+
+
+
+
+
+
+
+
+
+
 }
